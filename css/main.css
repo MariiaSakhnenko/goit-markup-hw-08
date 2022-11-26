@@ -938,11 +938,26 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .footer__container {
+    text-align: center;
   }
 }
 
-.footer__wrapper {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199.98px) {
+  .footer__wrapper {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -997,8 +1012,10 @@ img {
   color: var(--accent-text-color);
 }
 
-.footer__socials {
-  margin-bottom: 60px;
+@media screen and (max-width: 767.98px) {
+  .footer__socials {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__socials {
@@ -1058,8 +1075,10 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.subscript {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .subscript {
+    margin-left: 93px;
+  }
 }
 
 .subscript__title {
@@ -1072,17 +1091,22 @@ img {
 }
 
 .subscript__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscript__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subscript__form input {
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1092,11 +1116,21 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
 }
+@media screen and (min-width: 1200px) {
+  .subscript__form input {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .subscript__form input {
+    margin-bottom: 20px;
+  }
+}
 
 .subscript__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
