@@ -2,30 +2,40 @@
 /* benefits section */
 
 .benefits__menu {
-    display: flex;
-    gap: 30px;
+    @include card-set;
+}
+
+.benefits__item {
+    @include card-set-item;
+
+    @media screen and (min-width: 768px) {
+        @include card-set-item(2);
+    }
 }
 
 .benefits__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
+    @include f-center;
+
     height: 120px;
+    margin-bottom: 30px;
 
     border-radius: 4px;
-    margin-bottom: 30px;
     background-color: #f5f4f4;
 }
 
 .benefits__title {
     margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .benefits__text {

@@ -2,25 +2,48 @@
 /* clients section */
 
 .clients__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+
+    // desktop 
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
 .clients__menu {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    @include card-set;
+
+    margin-top: 30px;
+
+    // desktop 
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
+}
+
+.clients__item {
+    @include card-set-item(2);
+
+    // tablet 
+    @media screen and (min-width: 768px) {
+        @include card-set-item(3);
+    }
+    
+    // desktop 
+    @media screen and (min-width: 1200px) {
+        @include card-set-item(6);
+    }
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 92px;
 
     color: #afb1b8;
@@ -30,19 +53,14 @@
     transition-property: color, border-color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-    color: var(--accent-text-color);
-    border-color: var(--accent-text-color);
+    &:hover, 
+    &:focus {
+        color: var(--accent-text-color);
+        border-color: var(--accent-text-color);
+    }
 }
 
 .clients__icon {
-    fill: currentColor;
-}
-
-.clients__icon:hover,
-.clients__icon:focus {
     fill: currentColor;
 }
