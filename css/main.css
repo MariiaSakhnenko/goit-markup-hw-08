@@ -930,6 +930,21 @@ img {
   background-color: var(--main-bg-cl);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer__wrapper {
+  margin-bottom: 60px;
+}
+
 .footer__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -982,17 +997,13 @@ img {
   color: var(--accent-text-color);
 }
 
-.footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer__socials {
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-left: 70px;
+  }
 }
 
 .footer__social-title {

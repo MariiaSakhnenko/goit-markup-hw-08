@@ -5,7 +5,8 @@
     padding: 60px 0;
 
     // desktop
-    @media screen and (min-width: 1200px) {
+
+    @include mq(desktop) {
         padding: 94px 0;
     }
 }
@@ -15,17 +16,17 @@
     padding: 0 15px;
 
     // mobile
-    @media screen and (min-width: 480px) {
-        width: 480px;  
+    @include mq(mobile) {
+        width: 480px;
     }
 
     // tablet 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         width: 768px;
     }
     
     // desktop 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
         width: 1200px;
     }
 }

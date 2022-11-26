@@ -6,6 +6,17 @@
     background-color: var(--main-bg-cl);
 }
 
+.footer__container {
+    @include mq(tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__wrapper {
+    margin-bottom: 60px;
+}
+
 .footer__logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -56,13 +67,12 @@
     color: var(--accent-text-color);
 }
 
-.footer__wrapper {
-    display: flex;
-    align-items: baseline;
-}
-
 .footer__socials {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    
+    @include mq(desktop) {
+        margin-left: 70px;
+    }
 }
 
 .footer__social-title {
