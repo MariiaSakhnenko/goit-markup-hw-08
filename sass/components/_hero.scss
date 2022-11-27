@@ -16,10 +16,10 @@
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/back/hero_sm.jpg');
-
-  @include mq(retina) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/back/hero_sm@2x.jpg');
+    
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/back/hero_sm@2x.jpg');
   }
 
   @include mq(tablet) {
