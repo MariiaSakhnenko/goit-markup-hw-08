@@ -32,7 +32,7 @@
 
   @include mq(tablet) {
     display: block;
-    margin-left: 93px;
+    margin-left: 88px;
   }
 }
 
@@ -89,21 +89,29 @@
   display: none;
 
   @include mq(tablet) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @include mq(desktop) {
     display: flex;
     gap: 50px;
-
     margin-left: auto;
+  }
+}
+
+.header__contacts-item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
   }
 }
 
 .header__contacts-link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--third-text-color);

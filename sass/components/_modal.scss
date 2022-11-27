@@ -24,8 +24,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
   padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -165,7 +164,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
@@ -189,14 +188,17 @@
 
 .modal__checkbox-title {
   position: absolute;
-  top: 440px;
-  left: 60px;
+  top: 462px;
+  left: 49px;
+
+  @include mq(desktop) {
+    position: absolute;
+    top: 439px;
+    left: 72px;
+  }
 }
 
 .modal__checkbox-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-text-color);
   margin-left: 4px;
