@@ -48,6 +48,10 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+
+  @include mq(desktop) {
+    font-size: 44px;
+  }
 }
 
 .hero__button-open {

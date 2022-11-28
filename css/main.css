@@ -416,6 +416,11 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
 
 .hero__button-open {
   display: block;
