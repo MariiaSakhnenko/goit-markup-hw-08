@@ -7,8 +7,7 @@
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 
-  // desktop
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 36px;
   }
 }
@@ -18,8 +17,7 @@
 
   margin-top: 30px;
 
-  // desktop
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     margin-top: 50px;
   }
 }
@@ -27,13 +25,11 @@
 .clients__item {
   @include card-set-item(2);
 
-  // tablet
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     @include card-set-item(3);
   }
 
-  // desktop
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     @include card-set-item(6);
   }
 }

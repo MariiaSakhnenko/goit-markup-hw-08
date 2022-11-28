@@ -3,8 +3,6 @@
 .section {
   padding: 60px 0;
 
-  // desktop
-
   @include mq(desktop) {
     padding: 94px 0;
   }
@@ -14,17 +12,14 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  // mobile
   @include mq(mobile) {
     width: 480px;
   }
 
-  // tablet
   @include mq(tablet) {
     width: 768px;
   }
 
-  // desktop
   @include mq(desktop) {
     width: 1200px;
   }

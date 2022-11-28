@@ -322,10 +322,6 @@ img {
   color: var(--accent-text-color);
 }
 
-.mobile__contacts {
-  margin-bottom: 64px;
-}
-
 .mobile__contacts-tel {
   font-weight: 500;
   font-size: 34px;
@@ -349,6 +345,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 64px;
 }
 
 .mobile__socials-item:not(:last-child) {
@@ -662,7 +659,7 @@ img {
 .modal__checkbox-title {
   position: absolute;
   top: 462px;
-  left: 49px;
+  left: 48px;
 }
 @media screen and (min-width: 1200px) {
   .modal__checkbox-title {
@@ -1030,6 +1027,12 @@ img {
           justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .filter__galary {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .filter__button {

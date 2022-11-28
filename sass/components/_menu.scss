@@ -87,10 +87,6 @@
   color: var(--accent-text-color);
 }
 
-.mobile__contacts {
-  margin-bottom: 64px;
-}
-
 .mobile__contacts-tel {
   font-weight: 500;
   font-size: 34px;
@@ -110,6 +106,7 @@
 .mobile__socials {
   display: flex;
   align-items: center;
+  margin-top: 64px;
 }
 
 .mobile__socials-item {

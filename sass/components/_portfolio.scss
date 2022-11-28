@@ -5,6 +5,10 @@
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+
+  @include mq(mobile) {
+    flex-wrap: wrap;
+  }
 }
 
 .filter__button {
